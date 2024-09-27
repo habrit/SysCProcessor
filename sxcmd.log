@@ -1,0 +1,37 @@
+### Custom WaveView ADV log file, revision V-2023.12-4 (build Feb 07, ) ###
+### created at 22:07:08 on Thu Sep 26 2024 (Linux AMD64) ###
+### Host Name: n03-poseidon.olympus.ece.tamu.edu   User ID:    PID: 4126388   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+wv_move_window {Custom WaveView} {} 1954 1254
+wv_move_window {Custom WaveView} {} 1954 1254
+wv_select_window {Custom WaveView} 
+wv_move_window {Custom WaveView} {} 1908 1152
+wv_move_window {Custom WaveView} {} 0 0
+wv_move_window {Custom WaveView} {} 1908 1152
+wv_select_window {Custom WaveView} 
+wv_move_window {Custom WaveView} {} 1920 1220
+wv_press_tool_button {Custom WaveView} {} {OpenWaveform0} 
+wv_select_dialog {FileDialog} 
+wv_select_list_item {FileDialog} {} {FileList} {four_bit_adder.vcd} 6
+wv_dclick_list_item {FileDialog} {} {FileList} {four_bit_adder.vcd} 6
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:four_bit_adder.vcd(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:four_bit_adder.vcd(0)@SystemC(0)} {0} {+sep=@}
+wv_select_window {Custom WaveView} 
+wv_select_list_item {Custom WaveView} {} {sigview} {A[3:0]} 0
+wv_select_list_item {Custom WaveView} {} {sigview} {S[3:0]} 3
+wv_select_window {Custom WaveView} 
+wv_select_list_item {Custom WaveView} {} {sigview} {A[3:0]} 0 +shift
+wv_select_window {Custom WaveView} 
+wv_select_list_item {Custom WaveView} {} {sigview} {S[3:0]} 3
+wv_select_list_item {Custom WaveView} {} {sigview} {A[3:0]} 0 +shift
+wv_drag_list_item {Custom WaveView} {} {sigview} {B[3:0]} 1
+wv_drag_enter WV1
+wv_drop_on WV1
+wv_select_window {Custom WaveView} 
+wv_close_window {Custom WaveView} 
+wv_select_dialog {Confirmation} 
+#wv_press_button {Confirmation} {} {Ok} 
