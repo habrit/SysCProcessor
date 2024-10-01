@@ -1,0 +1,60 @@
+Assertion Passed: AND test
+Assertion Passed: AND Zero flag test
+Assertion Passed: OR test
+Assertion Passed: OR Zero flag test
+Assertion Passed: ADD test
+Assertion Passed: ADD Zero flag test
+Assertion Passed: SUB test
+Assertion Passed: SUB Zero flag test
+Assertion Passed: SLT test
+Assertion Passed: SLT Zero flag test
+Assertion Passed: ADDU test
+Assertion Passed: ADDU Zero flag test
+Assertion Passed: SUBU test
+Assertion Passed: SUBU Zero flag test
+Assertion Passed: SRL test
+Assertion Passed: SRL Zero flag test
+Assertion Passed: ADDU 0,0 test
+Assertion Passed: ADDU 0,0 Zero flag test
+Assertion Passed: ADDU 0,-1 test
+Assertion Passed: ADDU 0,-1 Zero flag test
+Assertion Passed: ADDU -1,0 test
+Assertion Passed: ADDU -1,0 Zero flag test
+Assertion Passed: ADDU FF,1 test
+Assertion Passed: ADDU FF,1 Zero flag test
+Assertion Passed: SUBU 0,0 test
+Assertion Passed: SUBU 0,0 Zero flag test
+Assertion Passed: SUBU 1,-1 test
+Assertion Passed: SUBU 1,-1 Zero flag test
+Assertion Passed: SUBU 1,1 test
+Assertion Passed: SUBU 1,1 Zero flag test
+Assertion Passed: XOR 0xF0F0F0F0,0x0000FFFF test
+Assertion Passed: XOR 0xF0F0F0F0,0x0000FFFF Zero flag test
+Assertion Passed: XOR 0x12345678,0x87654321 test
+Assertion Passed: XOR 0x12345678,0x87654321 Zero flag test
+Assertion Passed: SLTU 0,0 test
+Assertion Passed: SLTU 0,0 Zero flag test
+Assertion Passed: SLTU 0,1 test
+Assertion Passed: SLTU 0,1 Zero flag test
+Assertion Passed: SLTU 0,-1 test
+Assertion Passed: SLTU 0,-1 Zero flag test
+Assertion Passed: SLTU 1,0 test
+Assertion Passed: SLTU 1,0 Zero flag test
+Assertion Passed: SLTU -1,0 test
+Assertion Passed: SLTU -1,0 Zero flag test
+Assertion Passed: NOR 0xF0F0F0F0,0x0000FFFF test
+Assertion Passed: NOR 0xF0F0F0F0,0x0000FFFF Zero flag test
+Assertion Passed: NOR 0x12345678,0x87654321 test
+Assertion Passed: NOR 0x12345678,0x87654321 Zero flag test
+Assertion Passed: SRA 0x00000001,3 test
+Assertion Passed: SRA 0x00000001,3 Zero flag test
+Assertion Passed: SRA 0x00001234,6 test
+Assertion Passed: SRA 0x00001234,6 Zero flag test
+Assertion Passed: SRA 0xFFFF1234,6 test
+Assertion Passed: SRA 0xFFFF1234,6 Zero flag test
+Assertion Passed: LUI 0x12345678 test
+Assertion Passed: LUI 0x12345678 Zero flag test
+Assertion Passed: LUI 0x00001234 test
+Assertion Passed: LUI 0x00001234 Zero flag test
+
+Info: /OSCI/SystemC: Simulation stopped by user.
