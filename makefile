@@ -7,18 +7,31 @@ CXX = g++
 CXXFLAGS = -std=c++17 -I. -I$(SYSTEMC_INCDIR) -L$(SYSTEMC_LIBDIR) -lsystemc -lm
 TARGET = sim.out
 
+# List of object files
 
+OBJS = ALU.o main.o ALUtb.o
 
 all: $(TARGET)
 
-$(TARGET): ALU.o ALUtb.o
-	$(CXX) -o $(TARGET) ALU.o ALUtb.o $(CXXFLAGS)
+$(TARGET): $(OBJS)
+	$(CXX) -o $(TARGET) $(OBJS) $(CXXFLAGS)
 
 ALU.o: ALU.cpp
 	$(CXX) -c ALU.cpp $(CXXFLAGS) $(CPPFLAGS)
 
+
 ALUtb.o: ALUtb.cpp
 	$(CXX) -c ALUtb.cpp $(CXXFLAGS) $(CPPFLAGS)
+
+main.o: main.cpp
+	$(CXX) -c main.cpp $(CXXFLAGS) $(CPPFLAGS)
+
+#4bitadder.o: 4bitadder.cpp
+#	$(CXX) -c 4bitadder.cpp $(CXXFLAGS) $(CPPFLAGS)
+
+#4bitaddertb.o: 4bitaddertb.cpp
+#	$(CXX) -c 4bitaddertb.cpp $(CXXFLAGS) $(CPPFLAGS)
+
 
 clean:
 	rm -f *.o $(TARGET)

@@ -26,6 +26,10 @@ SC_MODULE(Testbench) {
         SC_THREAD(run_tests);
     }
 
+    void start_tests() {
+        SC_THREAD(run_tests);
+    }
+
     void custom_assert(bool condition, const std::string& message) {
         if (!condition) {
             cout << "Assertion FAILED: " << message << endl;
@@ -39,8 +43,6 @@ SC_MODULE(Testbench) {
 
     void run_tests() {
 
-        int testPassed = 0;
-        int testFailed = 0;
 
         // Test 1: AND
         BusA.write(0xF0F0F0F0);
@@ -287,10 +289,3 @@ SC_MODULE(Testbench) {
         delete alu; // Clean up allocated memory
     }
 };
-
-// Main function
-int sc_main(int argc, char* argv[]) {
-    Testbench tb("Testbench"); // Instantiate the testbench
-    sc_start(); // Start the simulation
-    return 0;
-}
